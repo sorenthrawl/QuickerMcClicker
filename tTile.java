@@ -30,25 +30,33 @@ class tTile extends JPanel implements MouseListener{
         isRed = true;
     }
 
-    public String toString(){
-       return "";
+    public void setToWhite(){
+        isRed = false;
     }
 
-    public void paintComponent(Graphics g) {
+    public boolean getColor(){
+        return isRed;
+    }
+
+    public void paintComponent(Graphics g){
         super.paintComponent(g);
 
         if (isRed) {
-            g.setColor(Color.red);
+            g.setColor(Color.RED); 
             g.fillRect(0, 0, 100, 100);
         }
-        
+        else {
+            g.setColor(Color.WHITE);
+            g.fillRect(0, 0, 100, 100);
+        } 
     }
-
     
     public void mouseClicked(MouseEvent e){
         System.out.println("Clicked");
-        isRed = false;
-        repaint();
+        if(isRed){
+            isRed = false;
+            repaint();
+        }
     };
 
     public void mouseReleased(MouseEvent e){};

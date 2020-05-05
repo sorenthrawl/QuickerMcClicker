@@ -6,4 +6,4 @@ To run execute:
     javac *.java
     java quickerMcClicker
 
-I so far have a square print on the screen that when pressed turns off. I also have a button that adds new squares. I will be making it so that when a square is pressed a new square will pop up. I also want to make the button only change the square placement and will restart the timer. I will be adding a timer that times how long you take to push a set number of squares.
+Click the "Start or Restart" button on the bottom and the timer will start. Click on the randomly placed red squares as all ten pop up one by one. After clicking all ten the bottom bar will show your time. If you want to retry simply push the "Start or Restart" button again.
